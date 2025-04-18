@@ -2,7 +2,7 @@
 
 namespace FinanceApp.Models
 {
-    public class Expanse
+    public class Expense
     {
         public int Id { get; set; }
         [Required]
