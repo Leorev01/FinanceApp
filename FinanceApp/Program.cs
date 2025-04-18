@@ -1,29 +1,35 @@
+using FinanceApp.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Register MVC
 builder.Services.AddControllersWithViews();
+
+// Register your JSON-based context
+builder.Services.AddSingleton(provider =>
+{
+    string jsonPath = builder.Configuration.GetValue<string>("DatabaseSettings:JsonFilePath");
+    var dbService = new JsonDatabaseService(jsonPath);
+    return new FinanceAppContext(dbService);
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Standard middleware
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles(); // Make sure static files are enabled
 app.UseRouting();
-
 app.UseAuthorization();
 
-app.MapStaticAssets();
-
+// MVC route
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
-
+    pattern: "{controller=Expenses}/{action=Index}/{id?}");
 
 app.Run();

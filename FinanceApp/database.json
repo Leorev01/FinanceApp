@@ -1,0 +1,51 @@
+{
+    "expensesTable": {
+        "columns": [
+            {
+                "name": "id",
+                "type": "INTEGER",
+                "primaryKey": true,
+                "autoIncrement": true
+            },
+            {
+                "name": "description",
+                "type": "TEXT"
+            },
+            {
+                "name": "amount",
+                "type": "REAL"
+            },
+            {
+                "name": "category",
+                "type": "TEXT"
+            },
+            {
+                "name": "date",
+                "type": "TEXT"
+            }
+        ],
+        "rows": [
+            {
+                "id": 1,
+                "description": "Office Supplies",
+                "amount": 120.50,
+                "category": "Office",
+                "date": "2025-04-18"
+            },
+            {
+                "id": 2,
+                "description": "Internet Bill",
+                "amount": 60.00,
+                "category": "Utilities",
+                "date": "2025-04-17"
+            },
+            {
+                "id": 3,
+                "description": "Lunch with Client",
+                "amount": 30.00,
+                "category": "Meals",
+                "date": "2025-04-16"
+            }
+        ]
+    }
+}
