@@ -1,0 +1,21 @@
+{
+  "expensesTable": {
+    "columns": [],
+    "rows": [
+      {
+        "Id": 0,
+        "Description": "Rent",
+        "Amount": 300.0,
+        "Category": "Monthly Expense",
+        "Date": "2025-04-19T09:48:30.93824+01:00"
+      },
+      {
+        "Id": 1,
+        "Description": "Test",
+        "Amount": 200.0,
+        "Category": "Testing",
+        "Date": "2025-04-19T09:57:10.4650643+01:00"
+      }
+    ]
+  }
+}
