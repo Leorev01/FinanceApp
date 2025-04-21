@@ -1,8 +1,8 @@
-# Finance Tracker
+# Finance Tracker Web App
 
 ## Overview
 
-The **Finance Tracker** is a personal finance dashboard built with ASP.NET, Razor Pages, and designed to help users track their income and expenses. The app provides a user-friendly interface to categorize and visualize spending, saving, and other financial activities. It stores financial data in a JSON file for simplicity and scalability, and it aims to make managing finances easier for individuals or small businesses.
+The **Finance Tracker Web App** is a personal finance dashboard built with ASP.NET, Razor Pages, and designed to help users track their income and expenses. The app provides a user-friendly interface to categorize and visualize spending, saving, and other financial activities. It stores financial data in a JSON file for simplicity and scalability, and it aims to make managing finances easier for individuals or small businesses.
 
 ## Features
 
@@ -31,5 +31,5 @@ To run the project locally, follow these steps:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Leorev01/FinanceTracker.git
-cd FinanceTracker
+git clone https://github.com/Leorev01/finance-tracker-web-app.git
+cd finance-tracker-web-app

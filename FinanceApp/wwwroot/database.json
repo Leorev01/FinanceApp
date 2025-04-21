@@ -15,6 +15,13 @@
         "Amount": 200.0,
         "Category": "Testing",
         "Date": "2025-04-19T09:57:10.4650643+01:00"
+      },
+      {
+        "Id": 2,
+        "Description": "Mentorship program",
+        "Amount": 20.0,
+        "Category": "Personal Development",
+        "Date": "2025-04-21T17:41:28.6248048+01:00"
       }
     ]
   }
