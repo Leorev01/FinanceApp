@@ -1,5 +1,8 @@
-﻿using FinanceApp.Models;
+﻿
+using FinanceApp.Models;
 using Microsoft.EntityFrameworkCore;
+
+
 
 namespace FinanceApp.Data.Services
 {
@@ -7,20 +10,21 @@ namespace FinanceApp.Data.Services
 
     {
         private readonly FinanceAppContext _context;
-        public ExpensesService(FinanceAppContext context) 
-        { 
-            _context = context;
-        }    
-        public async Task Add(Expense expense)
+        public ExpensesService(FinanceAppContext context)
         {
-            _context.Expenses.Add(expense);
-            await _context.SaveChangesAsync();
+            _context = context;
+        }
+        public Task Add(Expense expense)
+        {
+            _context.AddExpense(expense);
+            return Task.CompletedTask;
         }
 
         public async Task<IEnumerable<Expense>> GetAll()
         {
-            var expenses = await _context.Expenses.ToListAsync();
-            return expenses;
+            var expenses = _context.Expenses;
+            return (IEnumerable<Expense>)Task.FromResult(expenses.AsEnumerable());
         }
     }
 }
+
