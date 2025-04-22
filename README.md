@@ -1,4 +1,4 @@
-# Finance Tracker Web App
+# Finance Tracker
 
 ## Overview
 
@@ -31,5 +31,5 @@ To run the project locally, follow these steps:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Leorev01/finance-tracker-web-app.git
-cd finance-tracker-web-app
+git clone https://github.com/Leorev01/finance-tracker-web-appFinanceTracker.git
+cd FinanceTracker
