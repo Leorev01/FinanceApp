@@ -31,5 +31,5 @@ To run the project locally, follow these steps:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Leorev01/finance-tracker-web-appFinanceTracker.git
-cd FinanceTracker
+git clone https://github.com/Leorev01/FinanceApp.git
+cd FinanceApp
